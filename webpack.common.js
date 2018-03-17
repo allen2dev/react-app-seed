@@ -1,6 +1,5 @@
 const path = require('path')
 const webpack = require('webpack')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -14,7 +13,6 @@ module.exports = {
     chunkFilename: 'assets/[name].[chunkhash:6].js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'React App',
       hash: false,
